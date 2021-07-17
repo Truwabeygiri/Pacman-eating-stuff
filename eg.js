@@ -169,6 +169,7 @@ class EvilCircle extends Shape {
 
 
     setControls2() {
+        var touch = window.event.touches[0];
         this.x = Touch.clientX;
         this.y = Touch.clientY;
     }
@@ -197,13 +198,7 @@ let EvilCircle1 = new EvilCircle(15, 15, 10, 10, 10);
 
 document.querySelector('canvas').onmousemove = function () { EvilCircle1.setControls() };
 
-
-document.querySelector('canvas').addEventListener("touchstart", EvilCircle1.setControls2())
-
-document.querySelector('canvas').addEventListener("touchmove", EvilCircle1.setControls2())
-
-document.querySelector('canvas').addEventListener("touchend", EvilCircle1.setControls2())
-
+document.querySelector('canvas').ontouchmove = function () { EvilCircle1.setControls2() };
 
 
 function loop() {
