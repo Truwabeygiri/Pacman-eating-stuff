@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    cursor: none;
+  }
+  
+  html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+  }
+  
+  body {
+    overflow: hidden;
+    height: inherit;
+  }
+  
+  h1 {
+    font-size: 22;
+    letter-spacing: -1px;
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    left: 42.5%;
+ color: white;
+    
+  }
