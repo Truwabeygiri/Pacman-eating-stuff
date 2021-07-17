@@ -170,8 +170,8 @@ class EvilCircle extends Shape {
 
     setControls2() {
         var touch = window.event.touches[0];
-        this.x = Touch.clientX;
-        this.y = Touch.clientY;
+        this.x = touch.clientX;
+        this.y = touch.clientY;
     }
 
     collisionDetect() {
